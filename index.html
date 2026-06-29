@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BloomBoard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>✓ BloomBoard</h1>
+    <p class="subtitle">Simple. Clean. Productive.</p>
+
+    <div class="task-form">
+
+        <input
+            type="text"
+            id="title"
+            placeholder="+ Add a task..."
+        >
+
+        <input
+            type="date"
+            id="date"
+        >
+
+        <select id="priority">
+            <option>Low</option>
+            <option>Medium</option>
+            <option>High</option>
+        </select>
+
+        <button id="addTaskBtn">
+            Add Task
+        </button>
+
+    </div>
+
+    <input
+        type="text"
+        id="search"
+        placeholder="Search tasks..."
+    >
+
+    <div class="filters">
+
+        <button data-filter="All">All</button>
+        <button data-filter="Active">Active</button>
+        <button data-filter="Completed">Completed</button>
+
+    </div>
+
+    <div class="task-stats">
+        <span id="taskCount">0 tasks</span>
+    </div>
+
+    <div class="progress-section">
+
+        <p id="progressText">
+            Progress: 0/0
+        </p>
+
+        <div class="progress-bar">
+            <div
+                id="progressFill"
+                class="progress-fill">
+            </div>
+        </div>
+
+    </div>
+
+    <div id="taskContainer"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
